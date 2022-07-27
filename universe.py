@@ -9,10 +9,10 @@
 
 from pyshow.core.fixtures                    import Fixture
 
-from pyshow.fixtures.nobrand.60w_moving_head import NoBrand_60W_MovingHead_11Ch
+from pyshow.fixtures.nobrand.moving_head_60w import NoBrand_60W_MovingHead_11Ch
 from pyshow.fixtures.starway.maxkolor18      import Starway_Maxkolor18_11Ch
 
-from control import dmx_controller
+from transport import dmx_controller
 
 
 # ┌────────────────────────────────────────┐

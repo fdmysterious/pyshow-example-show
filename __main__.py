@@ -10,8 +10,8 @@
 import asyncio
 import logging
 
-from control import dmx_controller
 import universe
+from   transport import dmx_controller
 
 # ───────── import scenes groups ───────── #
 import scenes.positions
