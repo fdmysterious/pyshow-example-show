@@ -17,10 +17,13 @@ from .up   import scene as scene_up
 from .down import scene as scene_down
 from .star import scene as scene_star
 from .face import scene as scene_face
+from .circle_slow import scene as scene_circle_slow
 
 chooser = Scene_Chooser(scenes={
     "up"  : scene_up,
     "down": scene_down,
     "star": scene_star,
-    "face": scene_face
+    "face": scene_face,
+
+    "circle_slow": scene_circle_slow
 })

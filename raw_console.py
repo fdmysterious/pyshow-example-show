@@ -70,7 +70,7 @@ async def main():
 
     loop = asyncio.get_running_loop()
     register_wash(universe.wash_L, "wash_L")
-    register_wash(universe.wash_L, "wash_R")
+    register_wash(universe.wash_R, "wash_R")
     register_spot(universe.spot_L, "spot_L")
     register_spot(universe.spot_R, "spot_R")
 
@@ -79,7 +79,8 @@ async def main():
 
     try:
         while True:
-            await asyncio.sleep(5)
+            await asyncio.sleep(0.1)
+            dmx_controller.flush()
     finally:
         ctrl.stop()
         dmx_controller.close()

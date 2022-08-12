@@ -9,6 +9,7 @@
 
 import asyncio
 import logging
+import time
 
 import universe
 from   transport import dmx_controller
@@ -25,12 +26,14 @@ async def main():
 
     last_exec = time.time()
     try:
+        scenes.positions.chooser.choose("circle_slow")
         while True:
             tstamp = time.time()
 
+
             # Update stuff
-            scenes.positions.chooser.update()
-            scenes.dimmer.chooser.update()
+            await scenes.positions.chooser.update(tstamp)
+            await scenes.dimmer.chooser.update(tstamp)
 
             # Flush to controller
             dmx_controller.flush()

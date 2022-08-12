@@ -20,7 +20,7 @@ scene = Scene(
         ),
 
         Function_Static(
-            interface = universe.wash_L.interface["pos"].tilt,
+            interface = universe.wash_L.interfaces["pos"].tilt,
             target    = 180.0
         ), 
 
@@ -31,7 +31,7 @@ scene = Scene(
         ),
 
         Function_Static(
-            interface = universe.wash_R.interface["pos"].tilt,
+            interface = universe.wash_R.interfaces["pos"].tilt,
             target    = 180.0
         ), 
 
@@ -42,7 +42,7 @@ scene = Scene(
         ),
 
         Function_Static(
-            interface = universe.spot_L.interface["pos"].tilt,
+            interface = universe.spot_L.interfaces["pos"].tilt,
             target    = 180.0
         ), 
         
@@ -53,7 +53,7 @@ scene = Scene(
         ),
 
         Function_Static(
-            interface = universe.spot_R.interface["pos"].tilt,
+            interface = universe.spot_R.interfaces["pos"].tilt,
             target    = 180.0
         ), 
     ]
