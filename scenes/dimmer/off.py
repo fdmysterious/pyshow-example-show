@@ -15,9 +15,23 @@ import universe
 scene = Scene(
     functions = [
         Function_Static(
-            interface = fixt.interfaces["dimmer"],
+            interface = universe.wash_L.interfaces["dimmer"],
             target    = 0.0
-        )
-        for fixt in universe.all()
+        ),
+
+        Function_Static(
+            interface = universe.wash_R.interfaces["dimmer"],
+            target    = 0.0
+        ),
+
+        Function_Static(
+            interface = universe.spot_L.interfaces["dimmer"],
+            target    = 0.0
+        ),
+
+        Function_Static(
+            interface = universe.spot_R.interfaces["dimmer"],
+            target    = 0.0
+        ),
     ]
 )

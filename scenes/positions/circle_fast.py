@@ -19,7 +19,7 @@ from utils                 import m
 import universe
 
 
-__PERIOD       = 60  # s
+__PERIOD       = 20  # s
 __REFRESH_RATE = 0.2 # s
 
 def rotfunc(fkt, t, dephase=0.0, v_min: float=0.0, v_max: float=1.0, invert=False):
@@ -59,6 +59,7 @@ scene = Scene(functions = [
     ),
 
     # ─────────────── tilt wash ────────────── #
+    
     
     Function_Periodic_Expr(
         interface = universe.wash_L.interfaces["pos"].tilt,

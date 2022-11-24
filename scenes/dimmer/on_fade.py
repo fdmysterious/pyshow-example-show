@@ -15,10 +15,27 @@ import universe
 scene = Scene(
     functions = [
         Function_Fade(
-            interface   = fixt.interfaces["dimmer"],
+            interface   = universe.wash_L.interfaces["dimmer"],
             target      = 100.0,
             fade_time_s = 5.0
-        )
-        for fixt in universe.all()
+        ),
+
+        Function_Fade(
+            interface   = universe.wash_R.interfaces["dimmer"],
+            target      = 100.0,
+            fade_time_s = 5.0
+        ),
+
+        Function_Fade(
+            interface   = universe.spot_L.interfaces["dimmer"],
+            target      = 100.0,
+            fade_time_s = 5.0
+        ),
+
+        Function_Fade(
+            interface   = universe.spot_R.interfaces["dimmer"],
+            target      = 100.0,
+            fade_time_s = 5.0
+        ),
     ]
 )
